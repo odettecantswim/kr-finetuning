@@ -21,7 +21,7 @@
     "window": "hann_window"  
   },
   "data": {
-    "is_japanese_dataset":false,
+    "is_japanese_dataset":true,
     "is_korean_dataset":true,
     "training_files":"filelists/ko_train.txt.cleaned",
     "validation_files":"filelists/ko_val.txt.cleaned",
