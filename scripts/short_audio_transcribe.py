@@ -50,8 +50,9 @@ if __name__ == "__main__":
         lang2token = {
             'zh': "[ZH]",
         }
-    elif args.languages == "K":
+    elif args.languages == "JK":
         lang2token = {
+            'ja': "[JA]",        
             'ko': "[KO]",
         }                
     assert (torch.cuda.is_available()), "Please enable GPU in order to run Whisper!"
