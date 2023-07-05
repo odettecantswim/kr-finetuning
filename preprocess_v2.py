@@ -14,6 +14,8 @@ if __name__ == "__main__":
         langs = ["[ZH]"]
     elif args.languages == "JK":
         langs = ["[JA]", "[KO]"]
+    elif args.languages == "GD":
+        langs = ["[GD]"]        
     new_annos = []
     # Source 1: transcribed short audios
     if os.path.exists("short_character_anno.txt"):
