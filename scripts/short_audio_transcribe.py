@@ -9,6 +9,7 @@ lang2token = {
             'zh': "[ZH]",
             'ja': "[JA]",
             'ko': "[KO]",
+            'gd': "[GD]",
             "en": "[EN]",         
         }
 def transcribe_one(audio_path):
@@ -55,6 +56,10 @@ if __name__ == "__main__":
             'ja': "[JA]",        
             'ko': "[KO]",
         }                
+    elif args.languages == "GD":
+        lang2token = {
+            'gd': "[GD]", 
+        }               
     assert (torch.cuda.is_available()), "Please enable GPU in order to run Whisper!"
     model = whisper.load_model(args.whisper_size)
     parent_dir = "./custom_character_voice/"
